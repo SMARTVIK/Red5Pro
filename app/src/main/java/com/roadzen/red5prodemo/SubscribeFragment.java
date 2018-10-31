@@ -39,7 +39,7 @@ public class SubscribeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        configuration = new R5Configuration(R5StreamProtocol.RTSP, "http://192.168.3.57"/*TODO localhost url*/, 8554, "live", 1.0f);
+        configuration = new R5Configuration(R5StreamProtocol.RTSP, "http://192.168.3.57:5080"/*TODO localhost url*/, 5080, "live", 1.0f);
         configuration.setLicenseKey("PT7P-3RQ4-CUIA-XEB3"); //TODO add sdk key
         configuration.setBundleID(getActivity().getPackageName());
     }
